@@ -1,0 +1,88 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+.App {
+
+  border: thick double #32a1ce ;
+  cursor: url(pointer.cur), pointer;
+    background-image: url(./grid.png);
+    background-color: rgb(32, 32, 32);
+  height: 99vh;
+
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+font-family: "console";
+src: url("./SourceCodePro-Regular.ttf") format("truetype");
+letter-spacing: 0%;
+}
+.children {
+
+  border: solid rgb(0, 68, 146);
+  border-bottom: solid rgb(31, 0, 172) 5px;
+  border-right: solid rgb(31, 0, 172) 5px;
+border-radius: 11px;
+border-top: rgb(0, 68, 146) solid  25px;
+  background-color: rgb(32, 32, 32);
+  font-size: 10px;
+  font-family: "console";
+ color: rgb(0, 255, 0);
+ padding: 1% ;
+  display: inline-table;
+  margin: 20px 20px;
+}
+#input{
+  cursor: url(beam.cur), pointer;
+  width: 97%;
+  font-size: 10px;
+  font-family: "console";
+color: rgb(0, 255, 0);
+background-color: rgb(27, 27, 27);
+outline: none;
+box-shadow: none;
+outline-width: 0;
+border-style:solid; 
+border-width:0px
+
+}
+#input:focus {
+  outline: none;
+  box-shadow: none;
+  outline-width: 0;
+  border-style:solid; 
+  border-width:0px
+}
