@@ -16,7 +16,7 @@ function App() {
   const build = "PRODUCTION";
 }
 
- var promptvar = "Welcome to JTERMINAL version "+version+" on a " + build + " build!"
+ var promptvar ="Welcome to JTERMINAL version "+version+" on a " + build + " build!"
 
 
   function myFunction() {
@@ -106,6 +106,10 @@ useEffect(()=>{
   }
   else if (inputValue === "showprompt") {
     setMyArray([...myArray, inputValue, prompt]);
+  }
+  else if (inputValue === "party") {
+    setMyArray([...myArray, inputValue]);
+    return(<redirect to="/d"></redirect>)
   }
     else {
       setMyArray([...myArray, inputValue, inputValue + " is not a function or a file" ]);
