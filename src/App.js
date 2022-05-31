@@ -7,10 +7,11 @@ import Draggable from "react-draggable";
 
 function App() {
 
-console.log(process.env.NODE_ENV)
+
   let build = "???";
   const version = 0.81;
-  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  if (process.env.NODE_ENV === 'development') {
+    console.log(process.env.NODE_ENV)
     let build = "DEVELOPPEMENT";
 } else {
   let build = "PRODUCTION";
