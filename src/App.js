@@ -16,7 +16,7 @@ function App() {
   let build = "PRODUCTION";
 }
 
- var promptvar ="Welcome to JTERMINAL version "+version+" on a " + build + " build!"
+ let promptvar ="Welcome to JTERMINAL version "+version+" on a " + build + " build!"
 
 
   function myFunction() {
@@ -121,7 +121,7 @@ useEffect(()=>{
   return (
     
     <div className="App">
-
+    {"test"}
       <div className="Console"></div>
       <div className="children">
         {myArray.map((item, i) => (
