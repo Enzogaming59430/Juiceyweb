@@ -121,7 +121,7 @@ useEffect(()=>{
   return (
     
     <div className="App">
-    {"test"}
+    {build}
       <div className="Console"></div>
       <div className="children">
         {myArray.map((item, i) => (
