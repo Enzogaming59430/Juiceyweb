@@ -8,12 +8,12 @@ import Draggable from "react-draggable";
 function App() {
 
 
-  const build = "???";
+  let build = "???";
   const version = 0.81;
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    const build = "DEVELOPPEMENT";
+    let build = "DEVELOPPEMENT";
 } else {
-  const build = "PRODUCTION";
+  let build = "PRODUCTION";
 }
 
  var promptvar ="Welcome to JTERMINAL version "+version+" on a " + build + " build!"
