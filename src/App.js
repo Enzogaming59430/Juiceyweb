@@ -12,9 +12,9 @@ function App() {
   const version = 0.81;
   if (process.env.NODE_ENV === 'development') {
     console.log(process.env.NODE_ENV)
-    let build = "DEVELOPPEMENT";
+    build = "DEVELOPPEMENT";
 } else {
-  let build = "PRODUCTION";
+  build = "PRODUCTION";
 }
 
  let promptvar ="Welcome to JTERMINAL version "+version+" on a " + build + " build!"
